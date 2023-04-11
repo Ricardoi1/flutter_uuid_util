@@ -1,4 +1,4 @@
-group 'com.example.uuid_util'
+group 'com.example.flutter_uuid_util'
 version '1.0-SNAPSHOT'
 
 buildscript {

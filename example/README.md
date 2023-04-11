@@ -1,6 +1,6 @@
-# uuid_util_example
+# flutter_uuid_util_example
 
-Demonstrates how to use the uuid_util plugin.
+Demonstrates how to use the flutter_uuid_util plugin.
 
 ## Getting Started
 

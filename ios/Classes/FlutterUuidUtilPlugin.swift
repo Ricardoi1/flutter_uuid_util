@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 
-public class UuidUtilPlugin: NSObject, FlutterPlugin {
+public class FlutterUuidUtilPlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "uuid_util", binaryMessenger: registrar.messenger())
-        let instance = UuidUtilPlugin()
+        let channel = FlutterMethodChannel(name: "flutter_uuid_util", binaryMessenger: registrar.messenger())
+        let instance = FlutterUuidUtilPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
 

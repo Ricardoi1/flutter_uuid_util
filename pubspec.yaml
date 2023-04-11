@@ -1,4 +1,4 @@
-name: uuid_util
+name: flutter_uuid_util
 description: A new Flutter plugin project.
 version: 0.0.1
 homepage:
@@ -35,10 +35,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.uuid_util
-        pluginClass: UuidUtilPlugin
+        package: com.example.flutter_uuid_util
+        pluginClass: FlutterUuidUtilPlugin
       ios:
-        pluginClass: UuidUtilPlugin
+        pluginClass: FlutterUuidUtilPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

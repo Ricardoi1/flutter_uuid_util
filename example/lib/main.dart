@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:uuid_util/uuid_util.dart';
+import 'package:flutter_uuid_util/flutter_uuid_util.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-  final _uuidUtilPlugin = UuidUtil();
+  final _flutterUuidUtilPlugin = FlutterUuidUtil();
 
   @override
   void initState() {
@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
     // We also handle the message potentially returning null.
     try {
       platformVersion =
-          await _uuidUtilPlugin.getUuid() ?? 'Unknown platform version';
+          await _flutterUuidUtilPlugin.getUuid() ?? 'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }

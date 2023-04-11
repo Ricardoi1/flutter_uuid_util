@@ -1,13 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'uuid_util_platform_interface.dart';
+import 'flutter_uuid_util_platform_interface.dart';
 
-/// An implementation of [UuidUtilPlatform] that uses method channels.
-class MethodChannelUuidUtil extends UuidUtilPlatform {
+/// An implementation of [FlutterUuidUtilPlatform] that uses method channels.
+class MethodChannelFlutterUuidUtil extends FlutterUuidUtilPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('uuid_util');
+  final methodChannel = const MethodChannel('flutter_uuid_util');
 
   @override
   Future<String?> getUuid() async {

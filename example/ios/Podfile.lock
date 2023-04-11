@@ -1,21 +1,21 @@
 PODS:
   - Flutter (1.0.0)
-  - uuid_util (0.0.1):
+  - flutter_uuid_util (0.0.1):
     - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - uuid_util (from `.symlinks/plugins/uuid_util/ios`)
+  - flutter_uuid_util (from `.symlinks/plugins/flutter_uuid_util/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  uuid_util:
-    :path: ".symlinks/plugins/uuid_util/ios"
+  flutter_uuid_util:
+    :path: ".symlinks/plugins/flutter_uuid_util/ios"
 
 SPEC CHECKSUMS:
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  uuid_util: 8cfea7e8801527ce44e1b0e63a5c5fda659f598b
+  flutter_uuid_util: c05b7bd70b180b135930ba5f8f04bbd42eeecbb0
 
 PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
 

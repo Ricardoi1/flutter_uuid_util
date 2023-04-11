@@ -1,10 +1,10 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:uuid_util/uuid_util_method_channel.dart';
+import 'package:flutter_uuid_util/flutter_uuid_util_method_channel.dart';
 
 void main() {
-  MethodChannelUuidUtil platform = MethodChannelUuidUtil();
-  const MethodChannel channel = MethodChannel('uuid_util');
+  MethodChannelFlutterUuidUtil platform = MethodChannelFlutterUuidUtil();
+  const MethodChannel channel = MethodChannel('flutter_uuid_util');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -18,7 +18,7 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('getPlatformVersion', () async {
+  test('getUuid', () async {
     expect(await platform.getUuid(), '42');
   });
 }

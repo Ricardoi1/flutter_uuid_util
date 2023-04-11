@@ -1,4 +1,4 @@
-package com.example.uuid_util_example
+package com.example.flutter_uuid_util_example
 
 import io.flutter.embedding.android.FlutterActivity
 
